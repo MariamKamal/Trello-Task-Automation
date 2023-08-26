@@ -38,32 +38,43 @@ This project automates testing scenarios for the Trello task management tool. It
 
 ## Configuration
 Edit the `config.py` file to set up your Trello API key, token, and other configuration parameters.
+Using a Virtual Environment
+It's highly recommended to use a virtual environment to manage your project's dependencies, ensuring they don't interfere with other projects or your system-wide Python installation. Here's a step-by-step guide to set it up:
 
-### Using a Virtual Environment]
-It's recommended to use a virtual environment to manage your project's dependencies , ensuring that they don't interfere with other projects or the system-wide Python installation.. Here's how to set it up:
-1. Navigate to the project directory in the terminal.
-2. Create a virtual environment (replace 'venv' with your preferred environment name):
-- On Windows:
-  ```
- python3 -m venv venv_name
-  ```
- - On macOS and Linux:
-  ```
- python3 -m venv venv_name
-  ```
-3. Activate the virtual environment:
-- On Windows:
-  ```
-  venv\Scripts\activate
-  ```
-- On macOS and Linux:
-  ```
-  source venv/bin/activate
-  ```
-4. Install project dependencies:
-   ```
-   pip install pytest requests selenium beautifulsoup4 pytest-html pytest-json
-   ```
+Navigate to your project directory using the terminal.
+
+Create a virtual environment (replace 'venv_name' with your preferred environment name):
+
+On Windows:
+
+bash
+Copy code
+python -m venv venv_name
+On macOS and Linux:
+
+bash
+Copy code
+python3 -m venv venv_name
+Activate the virtual environment:
+
+On Windows:
+
+bash
+Copy code
+venv_name\Scripts\activate
+On macOS and Linux:
+
+bash
+Copy code
+source venv_name/bin/activate
+With the virtual environment active, install the necessary project dependencies using pip:
+
+bash
+Copy code
+pip install pytest requests selenium beautifulsoup4 pytest-html pytest-json
+By following these steps, you'll create an isolated environment for your project's dependencies, promoting a seamless development experience while working on your automation tasks.
+
+
 
 ### Running Tests
 
