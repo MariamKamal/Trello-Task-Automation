@@ -39,7 +39,7 @@ This project automates testing scenarios for the Trello task management tool. It
 ## Configuration
 Edit the `config.py` file to set up your Trello API key, token, and other configuration parameters.
 
-### Using a Virtual Environment](#using-a-virtual-environment
+### Using a Virtual Environment]
 It's recommended to use a virtual environment to manage your project's dependencies , ensuring that they don't interfere with other projects or the system-wide Python installation.. Here's how to set it up:
 1.Navigate to the project directory in the terminal.
 2. Create a virtual environment (replace 'venv' with your preferred environment name):
