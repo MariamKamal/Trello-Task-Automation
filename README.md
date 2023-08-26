@@ -80,7 +80,7 @@ Before you run the tests, make sure you have completed the necessary configurati
    
 - On Windows:
   ```
-  venv\Scripts\activate
+  venv_name\Scripts\activate
   ```
 - On macOS and Linux:
   ```
