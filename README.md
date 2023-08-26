@@ -32,7 +32,7 @@ This project automates testing scenarios for the Trello task management tool. It
 - Chrome browser (or the browser supported by the WebDriver)
 
 ## Installation
-1. Clone the repository: `git clone ??
+1. Clone the repository: `git clone (https://github.com/MariamKamal/Trello-Task-Automation.git)`
 2. Navigate to the project folder: `cd trello-automation`
 3. Install dependencies: `pip install -r requirements.txt`
 
