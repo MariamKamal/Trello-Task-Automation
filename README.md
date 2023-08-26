@@ -49,7 +49,7 @@ python3 -m venv venv_name
 - On macOS and Linux:
 ```
 python3 -m venv venv_name
-
+```
 3. Activate the virtual environment:
 - On Windows:
   ```
