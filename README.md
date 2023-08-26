@@ -195,7 +195,7 @@ To run the test:
 1. Configure the card title and new card description in `config.py`.
 2. Run the test using the command:
      ```
-    pytest --html=report.html --json=report.json -s tests/test_edit_card_viaUI.py
+    pytest --html=report.html --json=report.json -s tests/test_edit_task_viaUI.py
      ```
 
 
