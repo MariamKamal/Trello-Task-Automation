@@ -63,6 +63,12 @@ python3 -m venv venv_name
    ```
    pip install pytest requests selenium beautifulsoup4 pytest-html pytest-json
    ```
+5. To deactivate the virtual environment, simply enter the following command and press Enter:
+    ```
+   deactivate
+    ```
+  After running this command, your terminal session will return to the global Python environment, and any changes you made to the virtual environment will no longer be active. Remember that you can always reactivate the virtual 
+  environment when you're ready to continue working on your project.
 
 
 ### Running Tests
