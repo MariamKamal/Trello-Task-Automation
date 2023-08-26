@@ -41,7 +41,7 @@ Edit the `config.py` file to set up your Trello API key, token, and other config
 
 ### Using a Virtual Environment]
 It's recommended to use a virtual environment to manage your project's dependencies , ensuring that they don't interfere with other projects or the system-wide Python installation.. Here's how to set it up:
-1.Navigate to the project directory in the terminal.
+1. Navigate to the project directory in the terminal.
 2. Create a virtual environment (replace 'venv' with your preferred environment name):
 - On Windows:
  ```
@@ -61,7 +61,9 @@ python3 -m venv venv_name
   source venv/bin/activate
   ```
 4. Install project dependencies:
+   ```
    pip install pytest requests selenium beautifulsoup4 pytest-html pytest-json
+   ```
 
 ### Running Tests
 
