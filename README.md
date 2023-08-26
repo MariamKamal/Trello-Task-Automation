@@ -46,6 +46,7 @@ It's recommended to use a virtual environment to manage your project's dependenc
 - On Windows:
  ```
 python3 -m venv venv_name
+```
 - On macOS and Linux:
 ```
 python3 -m venv venv_name
@@ -58,6 +59,7 @@ python3 -m venv venv_name
 - On macOS and Linux:
   ```
   source venv/bin/activate
+  ```
 4. Install project dependencies:
    pip install pytest requests selenium beautifulsoup4 pytest-html pytest-json
 
