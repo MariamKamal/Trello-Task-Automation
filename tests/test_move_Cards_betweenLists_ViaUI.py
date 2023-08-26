@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 import time
-from config import BOARD_NAME,card_titles, password , username
+from config import BOARD_NAME,card_titles, password , username,card_title,destination_list
 from utils.utils import login,click_board
 
 @pytest.fixture(scope="module")
@@ -52,5 +52,5 @@ def test_login_and_move_card(driver):
 
     login(driver, username, password)
     click_board(driver, BOARD_NAME)
-    move_cards(driver,"Scenario Identification","Done")
+    move_cards(driver,card_title,destination_list)
     driver.quit()
