@@ -117,7 +117,9 @@ Once you have configured the board name in the config.py file, you can run the t
 
 
 Run the test using the following command:
-`pytest  --html=report.html --json=report.json -s tests/test_create_board.py`
+```
+pytest  --html=report.html --json=report.json -s tests/test_create_board.py
+```
 
 
 The test will use the board name you configured in the config.py file to create a Trello board via the API and verify its successful creation.
@@ -125,7 +127,9 @@ The test will use the board name you configured in the config.py file to create 
 Note: When creating a board, Trello automatically adds three default lists ("To Do", "Doing", "Done"). To start with a clean slate, I've included a step in the test case to archive these default lists before proceeding to create my own lists.
 
 To ensure this we need to run the following command:
- `pytest -s tests/test_Archive_Lists.py`
+ ```
+ pytest -s tests/test_Archive_Lists.py
+```
 
 
 ### Add Lists to Board API Test
@@ -153,7 +157,9 @@ Replace this list with your desired card titles.
 To run the test:
 1. Configure the desired card titles in `config.py`.
 2. Run the test using the command:
-   `pytest --html=report.html --json=report.json -s tests/test_create_cards_viaUI.py`
+   ```
+   pytest --html=report.html --json=report.json -s tests/test_create_cards_viaUI.py
+   ```
 
 ### Verify Cards Created via API
 This test retrieves cards created via the API and verifies their presence on the Trello board.
@@ -168,7 +174,9 @@ Replace these parameters with your desired board name, list name, and card title
 To run the test:
 1. Configure the board name, list name, and card titles in `config.py`.
 2. Run the test using the command:
-   `pytest --html=report.html --json=report.json -s tests/test_verify_created_cards_viaAPI.py`
+   ```
+   pytest --html=report.html --json=report.json -s tests/test_verify_created_cards_viaAPI.py
+   ```
 
 The console output will provide the status of each card created, indicating whether it was successfully created or if there were any failures.
 eated or if there were any failures during the creation process. This will help you quickly assess the results of the test run and identify any issues that may have occurred during card creation.
