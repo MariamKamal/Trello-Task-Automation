@@ -1,0 +1,30 @@
+Feature: Trello Board Management
+
+  Scenario: Create a Board, Add Lists, and Create Cards
+    Given I am on the Trello homepage
+    When I log in with valid credentials
+    And I create a new board
+    And I add lists to the board
+    And I create cards in the "To Do" list
+    Then the cards should be successfully created
+
+  Scenario: Verify Created Cards
+    Given I am on the Trello homepage
+    When I log in with valid credentials
+    When I navigate to the board
+    Then I should see the created cards in the "To Do" list
+
+  Scenario: Edit Card Information
+    Given I am on the Trello homepage
+    When I log in with valid credentials
+    When I navigate to the board
+    And I edit the information of a card
+    Then the card information should be updated
+
+  Scenario: Move Card Between Lists
+    Given I am on the Trello homepage
+    When I log in with valid credentials
+    When I navigate to the board
+    And I move a card from the "To Do" list to the "Done" list
+    Then the card should be successfully moved
+
