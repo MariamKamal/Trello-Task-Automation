@@ -161,7 +161,7 @@ To run the test:
 The console output will provide the status of each card created, indicating whether it was successfully created or if there were any failures.
 eated or if there were any failures during the creation process. This will help you quickly assess the results of the test run and identify any issues that may have occurred during card creation.
 
-###Edit Card via UI Test
+### Edit Card via UI Test
 This UI test uses Selenium to verifies the ability to edit card details using the Trello user interface editing description.
 
 Before running the test, make sure to edit the `config.py` file to set the appropriate parameters:
