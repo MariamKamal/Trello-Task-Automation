@@ -16,7 +16,7 @@ This project aims to automate testing of Trello task management functionality us
   - [Verify Cards Created via API](#Verify_Cards_Created_via_API)
   - [Move Cards between Lists UI Test](#Move_Cards_between_Lists_UI_Test)
   - [Edit Card via UI Test](#Edit_Card_via_UI_Test)
-- Potential Improvements and Future Work(#Potential_Improvements_and_Future Work)
+- [Potential Improvements and Future Work](#Potential_Improvements_and_Future Work)
   - [Project Structure and Design Improvements](#Project_Structure_and_Design_Improvements)
       -[Applying the Page Object Model (POM)](#Applying_the_Page_Object_Model_(POM))
       -[Enhancing Code Reusability](#Enhancing_Code_Reusability)
