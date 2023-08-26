@@ -60,8 +60,9 @@ python3 -m venv venv_name
   ```
   source venv/bin/activate
 4. Install project dependencies:
+   ```
    pip install pytest requests selenium beautifulsoup4 pytest-html pytest-json
-
+   ```
 
 
 ### Running Tests
