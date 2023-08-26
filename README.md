@@ -110,7 +110,7 @@ Before running the test, make sure to edit the `config.py` file to set the appro
 1. Open the `config.py` file located in the project directory.
 2. Locate the following line:
    ```python
-   BOARD_NAME = "Test Board1"
+   BOARD_NAME = "Automation Task"
 Replace "Test Board1" with your desired board name.
 Running the Test
 Once you have configured the board name in the config.py file, you can run the test as follows:
@@ -151,7 +151,7 @@ To run the test:
 This UI test uses Selenium to log in to Trello, navigate to a board, and add cards to a list. It then verifies the addition of cards.
 
 Before running the test, make sure to edit the `config.py` file to set the appropriate parameters:
-- `card_titles` = ["Requirement Analysis", "Scenario Identification"]
+- `card_titles` = ["Requirement Analysis", "Scenario Identification", "Test Case Preparation", "Test Execution"]
 
 Replace this list with your desired card titles.
 
@@ -168,7 +168,7 @@ Before running the test, make sure to edit the `config.py` file to set the appro
 Before running the test, make sure to edit the `config.py` file to set the appropriate parameters:
 - `BOARD_NAME` = "Test final"
 - `LIST_NAME` = "To Do"
-- `card_titles` = ["Requirement Analysis", "Scenario Identification"]
+- `card_titles` = ["Requirement Analysis", "Scenario Identification", "Test Case Preparation", "Test Execution"]
 
 Replace these parameters with your desired board name, list name, and card titles.
 
@@ -186,8 +186,8 @@ eated or if there were any failures during the creation process. This will help 
 This UI test uses Selenium to verifies the ability to edit card details using the Trello user interface editing description.
 
 Before running the test, make sure to edit the `config.py` file to set the appropriate parameters:
-- `card_title` = "Scenario Identification"
-- `new_card_description` = "this is updated card description"
+- `card_title` = "Test Execution"
+- `new_card_description` = "Using the prepared test cases, start coding the automation scripts"
 
 Replace these parameters with your desired card title and new card description.
 
@@ -204,8 +204,8 @@ To run the test:
 This UI test uses Selenium to move cards from one list to another on a Trello board. It verifies the successful movement of cards.
 
 Before running the test, make sure to edit the `config.py` file to set the appropriate parameters:
-- `card_title` = "Scenario Identification"
-- `destination_list` = "Done"
+- `card_title` = "Test Execution"
+- `destination_list` = "Doing"
 
 Replace these parameters with your desired card title and destination list name.
 
