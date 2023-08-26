@@ -141,7 +141,7 @@ To run the test:
 1. Set up the list names in `config.py`.
 2. Run the test using the command:
    ```
-   `pytest --html=report.html --json=report.json -s tests/test_add_lists_to_board.py`
+    pytest --html=report.html --json=report.json -s tests/test_add_lists_to_board.py
    ```
 
 
@@ -193,7 +193,9 @@ Replace these parameters with your desired card title and new card description.
 To run the test:
 1. Configure the card title and new card description in `config.py`.
 2. Run the test using the command:
-   `pytest --html=report.html --json=report.json -s tests/test_edit_card_viaUI.py`
+   ```
+    pytest --html=report.html --json=report.json -s tests/test_edit_card_viaUI.py
+   ```
 
 
 ### Move Cards between Lists UI Test
@@ -208,7 +210,9 @@ Replace these parameters with your desired card title and destination list name.
 To run the test:
 1. Configure the card title and destination list name in `config.py`.
 2. Run the test using the command:
-   `pytest --html=report.html --json=report.json -s tests/test_move_cards_betweenLists_viaUI.py`
+   ```
+   pytest --html=report.html --json=report.json -s tests/test_move_cards_betweenLists_viaUI.py
+   ```
 
 
 
