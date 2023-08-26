@@ -46,11 +46,11 @@ It's recommended to use a virtual environment to manage your project's dependenc
 - On Windows:
  ```
 python3 -m venv venv_name
-```
+ ```
 - On macOS and Linux:
-```
+ ```
 python3 -m venv venv_name
-```
+ ```
 3. Activate the virtual environment:
 - On Windows:
   ```
