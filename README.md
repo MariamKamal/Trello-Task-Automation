@@ -32,7 +32,7 @@ This project automates testing scenarios for the Trello task management tool. It
 - Chrome browser (or the browser supported by the WebDriver)
 
 ## Installation
-1. Clone the repository: `git clone https://github.com/MariamKamal/Trello-Task-Automation.git`
+1. Clone the repository: `git clone ??
 2. Navigate to the project folder: `cd trello-automation`
 3. Install dependencies: `pip install -r requirements.txt`
 
@@ -89,8 +89,7 @@ Once you have configured the board name in the config.py file, you can run the t
 
 
 Run the test using the following command:
-pytest -s tests/test_create_board.py --html=report.html
-pytest  --html=report.html --json=report.json -s tests/test_create_board.py
+`pytest  --html=report.html --json=report.json -s tests/test_create_board.py`
 
 
 The test will use the board name you configured in the config.py file to create a Trello board via the API and verify its successful creation.
@@ -98,17 +97,18 @@ The test will use the board name you configured in the config.py file to create 
 Note: When creating a board, Trello automatically adds three default lists ("To Do", "Doing", "Done"). To start with a clean slate, I've included a step in the test case to archive these default lists before proceeding to create my own lists.
 
 To ensure this we need to run the following command:
-pytest -s tests/test_Archive_Lists.py
+ `pytest -s tests/test_Archive_Lists.py`
 
 
 ### Add Lists to Board API Test
 This test adds lists to a created board using the Trello API and verifies their addition.
 
-Before running the test, make sure to edit the `config.py` file to set the appropriate parameters:
-list_names = ["TO do", "Doing", "Done"]
-Replace this list with your desired lists names
-Run the test using the following command:
-pytest  --html=report.html --json=report.json -s tests/test_add_lists_to_board.py
+Before running the test, configure the desired list names in `config.py`.
+
+To run the test:
+1. Set up the list names in `config.py`.
+2. Run the test using the command:
+   `pytest --html=report.html --json=report.json -s tests/test_add_lists_to_board.py`
 
 
 
@@ -116,48 +116,62 @@ pytest  --html=report.html --json=report.json -s tests/test_add_lists_to_board.p
 This UI test uses Selenium to log in to Trello, navigate to a board, and add cards to a list. It then verifies the addition of cards.
 
 Before running the test, make sure to edit the `config.py` file to set the appropriate parameters:
-card_titles = ["Requirement Analysis", "Scenario Identification"]
-Replace this list with your desired lists names
-Run the test using the following command:
-pytest  --html=report.html --json=report.json -s tests/test_create_cards_viaUI.py
+- `card_titles` = ["Requirement Analysis", "Scenario Identification"]
+
+Replace this list with your desired card titles.
+
+To run the test:
+1. Configure the desired card titles in `config.py`.
+2. Run the test using the command:
+   `pytest --html=report.html --json=report.json -s tests/test_create_cards_viaUI.py`
 
 ### Verify Cards Created via API
 This test retrieves cards created via the API and verifies their presence on the Trello board.
 Before running the test, make sure to edit the `config.py` file to set the appropriate parameters:
+Before running the test, make sure to edit the `config.py` file to set the appropriate parameters:
+- `BOARD_NAME` = "Test final"
+- `LIST_NAME` = "To Do"
+- `card_titles` = ["Requirement Analysis", "Scenario Identification"]
 
-BOARD_NAME = "Test final"
-LIST_NAME = "To Do"
-card_titles = ["Requirement Analysis", "Scenario Identification"]
+Replace these parameters with your desired board name, list name, and card titles.
 
-Relplace these with your desired Board name and its list name that you want to chcek cards created on it align with card_titles that same list you used in creation.
-Run the test using the following command:
-pytest  --html=report.html --json=report.json -s tests/test_verfiy_created_cards__viaAPI.py
+To run the test:
+1. Configure the board name, list name, and card titles in `config.py`.
+2. Run the test using the command:
+   `pytest --html=report.html --json=report.json -s tests/test_verify_created_cards_viaAPI.py`
 
-Note: The console output will provide the status of every card that is created, indicating whether it was successfully created or if there were any failures during the creation process. This will help you quickly assess the results of the test run and identify any issues that may have occurred during card creation.
+The console output will provide the status of each card created, indicating whether it was successfully created or if there were any failures.
+eated or if there were any failures during the creation process. This will help you quickly assess the results of the test run and identify any issues that may have occurred during card creation.
 
 ###Edit Card via UI Test
 This UI test uses Selenium to verifies the ability to edit card details using the Trello user interface editing description.
 
 Before running the test, make sure to edit the `config.py` file to set the appropriate parameters:
+- `card_title` = "Scenario Identification"
+- `new_card_description` = "this is updated card description"
 
-card_title="Scenario Identification"
-new_card_description="this is updated card description"
+Replace these parameters with your desired card title and new card description.
 
-Relplace these with your desired card_title and new_card_description 
-Run the test using the following command:
-pytest  --html=report.html --json=report.json -s tests/test_move_Cards_betweenLists_ViaUI.py
+To run the test:
+1. Configure the card title and new card description in `config.py`.
+2. Run the test using the command:
+   `pytest --html=report.html --json=report.json -s tests/test_edit_card_viaUI.py`
+
 
 ### Move Cards between Lists UI Test
 This UI test uses Selenium to move cards from one list to another on a Trello board. It verifies the successful movement of cards.
 
 Before running the test, make sure to edit the `config.py` file to set the appropriate parameters:
-card_title="Scenario Identification"
-destination_list="Done"
+- `card_title` = "Scenario Identification"
+- `destination_list` = "Done"
 
-Relplace these with your desired card_title and destination_list
+Replace these parameters with your desired card title and destination list name.
 
-Run the test using the following command:
-pytest  --html=report.html --json=report.json -s tests/test_move_Cards_betweenLists_ViaUI.py
+To run the test:
+1. Configure the card title and destination list name in `config.py`.
+2. Run the test using the command:
+   `pytest --html=report.html --json=report.json -s tests/test_move_cards_betweenLists_viaUI.py`
+
 
 
 
