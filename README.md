@@ -136,7 +136,9 @@ Before running the test, configure the desired list names in `config.py`.
 To run the test:
 1. Set up the list names in `config.py`.
 2. Run the test using the command:
+   ```
    `pytest --html=report.html --json=report.json -s tests/test_add_lists_to_board.py`
+   ```
 
 
 
