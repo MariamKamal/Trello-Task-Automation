@@ -63,16 +63,34 @@ python3 -m venv venv_name
 
 ### Running Tests
 
-1- Make sure you have activated your virtual environment (if applicable).
-2- Navigate to the project directory in the terminal.
-3-To execute the test suite, use the following command:
-pytest  --html=report.html --json=report.json -s 
 
--s: This option allows output to be printed directly to the console in real-time as the tests run. By default, pytest captures the standard output and standard error streams and only displays them when a test fails. Using the -s option ensures that you can see the console output for all tests, providing real-time feedback on the progress of the test suite.
-Including the -s option can be particularly useful for debugging, as it allows you to observe the output of print statements and other logging in your test code as the tests run.
---html=report.html: This generates an HTML report of the test results and saves it in the file named report.html.
---json=report.json: This generates a JSON report of the test results and saves it in the file named report.json.
-The generated HTML report (report.html) provides an interactive view of the test results, including detailed information about test cases, failures, and other relevant statistics
+Before you run the tests, make sure you have completed the necessary configurations and installations as mentioned in the previous sections.
+
+1. **Activate Virtual Environment:** If you're using a virtual environment, activate it using the appropriate command:
+   
+- On Windows:
+  ```
+  venv\Scripts\activate
+  ```
+- On macOS and Linux:
+  ```
+  source venv/bin/activate
+
+2. **Navigate to the Project Directory:** Open a terminal and navigate to the project directory that contains your test files.
+
+3. **Execute the Test Suite:** To run the test suite, use the following command:
+
+`pytest --html=report.html --json=report.json -s tests/Test_name.py`
+- The `-s` option allows output to be printed directly to the console in real-time as the tests run. This is useful for debugging purposes, as it provides immediate feedback on the progress of the test suite.
+- The `--html=report.html` option generates an HTML report of the test results and saves it in a file named `report.html`.
+- The `--json=report.json` option generates a JSON report of the test results and saves it in a file named `report.json`.
+
+The generated HTML report (`report.html`) provides an interactive view of the test results, including detailed information about test cases, failures, and other relevant statistics.
+
+**Note:** The HTML and JSON reports will be generated in the same directory where you executed the `pytest` command.
+
+The test suite will run through the specified test cases, both API and UI, and provide you with comprehensive results in the generated reports. This will help you assess the status of your Trello Automation Test Project.
+
 ### Tests
 
 ### Create Board API Test
