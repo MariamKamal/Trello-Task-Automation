@@ -214,7 +214,7 @@ To run the test:
 2. Run the test using the command:
    
    ```
-   pytest --html=report.html --json=report.json -s tests/test_move_cards_betweenLists_viaUI.py
+   pytest --html=report.html --json=report.json -s tests/test_move_Cards_betweenLists_ViaUI.py
    
    ```
 
