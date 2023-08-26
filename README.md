@@ -176,7 +176,7 @@ To run the test:
 1. Configure the board name, list name, and card titles in `config.py`.
 2. Run the test using the command:
    ```
-   pytest --html=report.html --json=report.json -s tests/test_verify_created_cards_viaAPI.py
+   pytest --html=report.html --json=report.json -s tests/test_verfiy_created_cards__viaAPI.py
    ```
 
 The console output will provide the status of each card created, indicating whether it was successfully created or if there were any failures.
