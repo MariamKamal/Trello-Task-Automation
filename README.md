@@ -44,13 +44,13 @@ It's recommended to use a virtual environment to manage your project's dependenc
 1. Navigate to the project directory in the terminal.
 2. Create a virtual environment (replace 'venv' with your preferred environment name):
 - On Windows:
- ```
-python3 -m venv venv_name
- ```
-- On macOS and Linux:
- ```
-python3 -m venv venv_name
- ```
+  ```
+ python3 -m venv venv_name
+  ```
+ - On macOS and Linux:
+  ```
+ python3 -m venv venv_name
+  ```
 3. Activate the virtual environment:
 - On Windows:
   ```
